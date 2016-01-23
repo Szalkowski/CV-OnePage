@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="keywords" content="Maciej Szałkowski CV życiorys" />
+		<meta name="description" content="Życiorys Macieja Szałkowskiego" />
+		<meta name="author" content="Maciej Szałkowski" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Maciej Szałkowski CV</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen, projection" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	<div id="main">
+		<div id="menu">
+			<ul>
+				<li><a href="#main">START</a></li>
+				<li><a href="#possibilities">UMIEJĘTNOŚCI</a></li>
+				<li><a href="#experience">DOŚWIADCZENIE</a></li>
+				<li><a href="#education">WYKSZTAŁCENIE</a></li>
+				<li><a href="#contact">KONTAKT</a></li>
+			</ul>
+		</div>
+		<h1><p id="nazwisko">Maciej Szałkowski</p></h1>
+		<img id="twarz" src="img/zdjecie.png" alt="moje zdjecie" />
+	</div>
+	<div id="possibilities">
+		<table id="tabela" border="1px solid" cellpadding="20px" cellspacing="20px" align="center">
+			<tr>
+				<td>HTML</td>
+				<td>Zaawansowany</td>
+			</tr>
+			<tr>
+				<td>CSS</td>
+				<td>Zaawansowany</td>
+			</tr>
+			<tr>
+				<td>JavaScript</td>
+				<td>Średnio</td>
+			</tr>
+			<tr>
+				<td>Photoshop</td>
+				<td>Średnio</td>
+			</tr>
+			<tr>
+				<td>PHP</td>
+				<td>Podstawy</td>
+			</tr>
+		</table>
+	</div>
+	<div id="experience">
+		<h2>Moje strony w Internecie</h2>
+		<p><a href="#">www.macszalkowski.bialystok.pl</a></p>
+		<p><a href="http://www.roman-stolarz.pl" target="_blank">www.roman-stolarz.pl</a></p>
+		<h2>Zatrudnienie</h2>
+		<ul>
+			<li>27.03.2015 - TRWA <span id="solid">Solid Security Sp. z o. o. - Pracownik ochrony</span></li>
+			<li>16.05.2014 - 19.12.2014 P.H.U. Rolstal Pruszcz Gdański - Magazynier</li>
+			<li>05.12.2013 - 28.04.2014 LPP S.A. Pruszcz Gdański - Personel pomocniczy</li>
+			<li>01.07.2013 - 03.12.2013 Mercor S.A. Pruszcz Gdański - montażysta-operator</li>
+			<li>10.07.2013 - 10.08.2013 Stockmedia Sp. z o.o. - praktyka programisty PHP</li>
+			<li>01.12.2006 – 10.05.2008 R&B Nursery ltd. Melville Nursery Lasswade Szkocja - pielęgniarz roślin, operator wózka widłowego</li>
+		</ul>
+	</div>
+	<div id="education">
+		<ul id="schools">
+			<li><img src="img/pb.png" alt="logo politechniki" /><span class="tekst">2015 - TRWA Politechnika Białostocka Front-End Development studia podyplomowe</span></li>
+			<li><img src="img/wsmiiu.jpg" alt="logo wsmiiu" /><span class="tekst">2009 - 2013 Wyższa Szkoła Matematyki i Informatyki Użytkowej w Białymstoku Administracja Systemów i Baz Danych studia licencjackie</span></li>
+		</ul>
+		<h2><p>Kursy i szkolenia</p></h2>
+		<ul class="courses">
+			<li>09.06.2013 – 27.07.2013 Programowanie aplikacji Internetowych</li>
+			<li>20.02.2013 – 28.03.2013 Zaawansowane techniki tworzenia stron internetowych - administracja portalami opartymi na CMS</li>
+		</ul>
+	</div>
+	<div id="contact">
+		<form id="formularz" method="post" action="kontakt.php">
+			<label for="dane">Imię i nazwisko</label><br/>
+			<input id="dane" class="pole" type="text" name="dane" /><br/>
+			<label for="mail">E-mail</label><br/>
+			<input id="mail" class="pole" type="text" name="mail" /><br/>
+			<label for="text">Wiadomość</label><br/>
+			<textarea id="text" rows="7" cols="35" name="text" ></textarea><br/>
+			<input id="button" type="submit" value="Wyślij" />
+		</form>
+	</div>
+	<script type="text/javascript">
+			$(document).ready(function() {
+  $('a[href^="#"]').click(function() {
+      var hash = $(this).attr('href');
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900);
+        return false;
+    });
+});
+</script>
+	</body>
+</html>
